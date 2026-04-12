@@ -1,10 +1,3 @@
-/* ============================================================
-   Blessing Masocha Portfolio — main.js (v2)
-   Features: Particle canvas, Scroll reveal, Theme toggle,
-   Animated counters, Profile photo upload, Form validation,
-   Hamburger menu, Navbar scroll state
-   ============================================================ */
-
 /* ===== PARTICLE BACKGROUND ===== */
 (function initParticles() {
   const canvas = document.getElementById('particleCanvas');
