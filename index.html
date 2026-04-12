@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blessing Masocha | Portfolio</title>
+  <link rel="stylesheet" href="https://github.com/blessinghasmail-afk/portfolio/blob/main/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS (background life) -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">BM<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-a">About</a></li>
+      <li><a href="#skills" class="nav-a">Skills</a></li>
+      <li><a href="#certificates" class="nav-a">Certificates</a></li>
+      <li><a href="#projects" class="nav-a">Projects</a></li>
+      <li><a href="#hobbies" class="nav-a">Hobbies</a></li>
+      <li><a href="#contact" class="nav-a">Contact</a></li>
+      <li><button class="nav-close-btn" id="navCloseBtn">✕</button></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-sun" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content reveal">
+      <p class="hero-tag">Computer Science Student · MSU Zimbabwe</p>
+      <h1 class="hero-title">Blessing<br/><span class="accent">Masocha</span></h1>
+      <p class="hero-sub">Building clean, meaningful software — from secure systems to smart interfaces.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">01 / About Me</div>
+      <div class="about-grid">
+
+        <!-- Profile photo upload -->
+        <div class="profile-col reveal-left">
+          <div class="profile-wrapper" id="profileWrapper">
+            <img src="https://github.com/blessinghasmail-afk/portfolio/blob/main/20260220_182153.jpg" alt="Blessing Masocha" id="profileImg" class="profile-img"/>
+            <div class="profile-overlay" id="profileOverlay">
+              <i class="fa-solid fa-camera"></i>
+              <span>Upload Photo</span>
+            </div>
+            <input type="file" accept="image/*" id="photoInput" hidden/>
+          </div>
+          <p class="profile-hint"></p>
+        </div>
+
+        <div class="about-right">
+          <h2 class="section-title reveal">A developer with a<br/><span class="accent">problem-solving mindset</span></h2>
+          <p class="reveal">I'm Blessing Masocha, a Level 2.1 Computer Science student at Midlands State University, Zimbabwe. I enjoy building software that solves real problems — whether that's securing data, streamlining workflows, or making technology more accessible.</p>
+          <p class="reveal">My academic focus spans web development, database systems, and software engineering. I approach every project with curiosity, care, and a drive to keep improving.</p>
+
+          <div class="counters-grid reveal">
+            <div class="counter-card">
+              <span class="counter-num" data-target="3">0</span>
+              <span class="counter-label">Projects Built</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-num" data-target="2">0</span>
+              <span class="counter-label">Years Studying CS</span>
+            </div>
+            <div class="counter-card">
+              <span class="counter-num" data-target="8">0</span>
+              <span class="counter-label">Technologies Used</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label reveal">02 / Skills</div>
+      <h2 class="section-title reveal">What I Work With</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal" style="--d:0ms">
+          <div class="skill-group-header"><i class="fa-solid fa-code"></i><h3>Languages</h3></div>
+          <ul><li>Python</li><li>JavaScript</li><li>HTML &amp; CSS</li><li>SQL</li></ul>
+        </div>
+        <div class="skill-group reveal" style="--d:100ms">
+          <div class="skill-group-header"><i class="fa-solid fa-layer-group"></i><h3>Frameworks &amp; Libraries</h3></div>
+          <ul><li>React.js</li><li>Node.js</li><li>Express.js</li></ul>
+        </div>
+        <div class="skill-group reveal" style="--d:200ms">
+          <div class="skill-group-header"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Tools &amp; Platforms</h3></div>
+          <ul><li>Git &amp; GitHub</li><li>Figma</li><li>VS Code</li></ul>
+        </div>
+        <div class="skill-group reveal" style="--d:300ms">
+          <div class="skill-group-header"><i class="fa-solid fa-database"></i><h3>Databases</h3></div>
+          <ul><li>MySQL</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <div class="section-label reveal">03 / Certificates</div>
+      <h2 class="section-title reveal">Professional Certifications</h2>
+      <div class="certificates-grid">
+        <div class="certificate-card reveal" style="--d:0ms">
+          <div class="cert-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="cert-content">
+            <h3>AI-Powered Cybersecurity Fundamentals</h3>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> April 2026</p>
+          </div>
+          <div class="cert-badge">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+        </div>
+
+        <div class="certificate-card reveal" style="--d:120ms">
+          <div class="cert-icon">
+            <i class="fa-solid fa-bug"></i>
+          </div>
+          <div class="cert-content">
+            <h3>SQL Injection Attacks</h3>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> April 2026</p>
+          </div>
+          <div class="cert-badge">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+        </div>
+
+        <div class="certificate-card reveal" style="--d:240ms">
+          <div class="cert-icon">
+            <i class="fa-solid fa-user-secret"></i>
+          </div>
+          <div class="cert-content">
+            <h3>Kali Linux for Ethical Hacking and Security Analysis</h3>
+            <p class="cert-date"><i class="fa-solid fa-calendar-check"></i> April 2026</p>
+          </div>
+          <div class="cert-badge">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-label reveal">04 / Projects</div>
+      <h2 class="section-title reveal">Things I've Built</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal" style="--d:0ms">
+          <div class="project-num">01</div>
+          <h3>Library Management System</h3>
+          <p>A full system for managing library operations — tracking books borrowed, in stock, and available — designed with a clean UI and backed by a relational database.</p>
+          <div class="tech-tags"><span>Python</span><span>MySQL</span><span>Figma</span></div>
+          <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+        <div class="project-card reveal" style="--d:120ms">
+          <div class="project-num">02</div>
+          <h3>Calculatory</h3>
+          <p>A sleek calculator application built with Python, designed in Figma for a polished and intuitive user experience.</p>
+          <div class="tech-tags"><span>Python</span><span>Figma</span></div>
+          <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+        <div class="project-card reveal" style="--d:240ms">
+          <div class="project-num">03</div>
+          <h3>Secure File Sharing App</h3>
+          <p>A web application that allows users to send files using end-to-end encryption — built with a modern full-stack approach to keep data private and secure.</p>
+          <div class="tech-tags"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>HTML</span><span>CSS</span></div>
+          <div class="project-links"><a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section class="section" id="hobbies">
+    <div class="container">
+      <div class="section-label reveal">05 / Hobbies</div>
+      <h2 class="section-title reveal">Beyond the Code</h2>
+      <p class="hobbies-intro reveal">When I'm not writing code, you'll find me doing these.</p>
+      <div class="hobbies-grid">
+
+        <div class="hobby-card reveal" style="--d:0ms">
+          <div class="hobby-img-wrap">
+            <img src="https://github.com/blessinghasmail-afk/portfolio/blob/main/hobby-swimming.svg" alt="Swimming" class="hobby-img"/>
+            <div class="hobby-img-overlay"></div>
+          </div>
+          <div class="hobby-body">
+            <span class="hobby-icon"><i class="fa-solid fa-water"></i></span>
+            <h3>Swimming</h3>
+            <p>I love the water. Swimming helps me reset my mind, build endurance, and stay sharp — both physically and mentally.</p>
+          </div>
+        </div>
+
+        <div class="hobby-card reveal" style="--d:150ms">
+          <div class="hobby-img-wrap">
+            <img src="https://github.com/blessinghasmail-afk/portfolio/blob/main/hobby-running.svg" alt="Running" class="hobby-img"/>
+            <div class="hobby-img-overlay"></div>
+          </div>
+          <div class="hobby-body">
+            <span class="hobby-icon"><i class="fa-solid fa-person-running"></i></span>
+            <h3>Running</h3>
+            <p>Running clears my head. Whether it's an early morning jog or an evening sprint, it keeps me energized and focused.</p>
+          </div>
+        </div>
+
+        <div class="hobby-card reveal" style="--d:300ms">
+          <div class="hobby-img-wrap">
+            <img src="https://github.com/blessinghasmail-afk/portfolio/blob/main/hobby-reading.svg" alt="Reading" class="hobby-img"/>
+            <div class="hobby-img-overlay"></div>
+          </div>
+          <div class="hobby-body">
+            <span class="hobby-icon"><i class="fa-solid fa-book-open"></i></span>
+            <h3>Reading Books</h3>
+            <p>Books expand my thinking. I enjoy reading across tech, personal development, and fiction — always chasing a new perspective.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-label reveal">06 / Contact</div>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p>I'm always open to new opportunities, collaborations, or just a good conversation about tech. Feel free to reach out.</p>
+          <div class="contact-detail">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:blessinghasmail@gmail.com">blessinghasmail@gmail.com</a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/blessing-masocha-4a4678348/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:blessinghasmail@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/blessinghasmail-afk" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?"></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span id="btnText">Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Blessing Masocha · MSU Zimbabwe</p>
+    <p class="footer-sub">Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="https://github.com/blessinghasmail-afk/portfolio/blob/main/main.js"></script>
+</body>
+</html>
